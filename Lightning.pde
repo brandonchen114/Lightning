@@ -14,7 +14,7 @@ void draw()
 
 
 	endX = startX + (int)(Math.random()*9-2);
-	endY = startY + (int)(Math.random()*5-1);
+	endY = startY + (int)(Math.random()*5-2);
 	line(startX, startY, endX, endY);
 	startX = endX;
 	startY = endY;
@@ -28,5 +28,6 @@ void mousePressed()
 		g = (int)(Math.random()*255);
 		b = (int)(Math.random()*255);
 		stroke(r, g, b);
+		background(255,255,255);
 }	
 
